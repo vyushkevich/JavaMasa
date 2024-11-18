@@ -1,0 +1,17 @@
+@startuml BMI_ActivityDiagram
+start
+:Enter weight in kilograms;
+if (Is weight valid?) then (yes)
+  :Enter height in meters;
+  if (Is height valid?) then (yes)
+    :Calculate BMI;
+    :Classify BMI;
+    :Display BMI and classification;
+  else (no)
+    stop
+  endif
+else (no)
+  stop
+endif
+stop
+@enduml
